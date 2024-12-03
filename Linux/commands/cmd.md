@@ -1,0 +1,88 @@
+* mkdir
+* pwd
+* cd
+* ls = list the files in a directory or files
+* touch = add files
+* cat = display content
+* rm = removes files
+* rm * = removes all files in a folder
+* rmdir = removes directory
+* ls -al =  to show the permissions of the file
+*  ` rwx rwx rwx `
+fisrt coloumn is for group and second is for organization 
+* `cd ..` is for one step backward
+* `cd ../..` is for two step backward
+* cp = it is used for to copy file
+* rm = to remove files
+* man = used to display the user manual of any command that we can run on the terminal
+* wget = is used for download
+* curl = is used for transfer a url
+* vi = text editor
+* nano = text editor
+* help = shows the detailed about command
+* ls -l  = shows the long listing format of files and directories
+* permissions of a file
+    *  `r  w  x`
+    *  `4  2  1 `
+* r=read
+* w=write
+* x= execute
+*in a file there wiil be users,groups,others
+*to give only read and write to the users group, execute
+                        ` chmod u+rw file name `
+*to give all permissions to the users,groups.others then execute
+                          ` chmod 777 filename `
+  rwx            rwx           rwx
+ users         groups      others  
+----------------------------------------------------------------------------------------
+*  to switch root user, execute 
+    `sudo su - `
+-------------------------------------------------------------------------------------------
+* `sudo nano /etc/ssh/sshd_config`
+* `sudo visudo`
+ above two commands for password based authentication and adding sudoers file.
+--------------------------------------------------------------------------------------------
+
+ ` DISK ,TOP,HTOP,KIL `
+-----------------------------------------
+
+      ` ls -R or ls --recursive `
+displays the contents of its subdirectories, and the contents of their subdirectories, and so on.
+---------------------------------------------------------------------------------------------------
+* if we install many versions ,to see those versions,select the particular one then,
+     
+    execute --->   "alternatives --config java"
+
+     abova command displays the all versions of java installed in a  Virtual Machine 
+-----------------------------------------------------------------------------------------------------
+to know present VM pubblic ip address 
+ ` curl ident.me`
+-------------------------------------------------
+
+adding a user to a group in Linux, we can use the usermod command.
+
+     `sudo usermod -aG <group_name> <username>`
+----------------------------------------------------------------------------
+
+* All the commands in linux are case- sensitive.
+----------------------------------------------------------------------------
+
+In Linux, "lo" and "eth0" are two types of network interfaces, 
+each serving a specific purpose.
+  `lo-loopback`
+  `eth0-ethernet0`
+-----------------------------------------------------------------------------
+
+In linux ,mounting known as mapping of hard disk from files 
+  in linux  Virtual Machine is known as ,mounting.
+-----------------------------------------------------------------------------
+To know users present in the linux machine 
+  
+  ` cat /etc/passwd `
+-----------------------------------------------------------------------------
+to reeload the enviroment variables in in /etc/ directory
+
+   `source /etc/environment`
+
+  sorce is the command that reloads the enviromental variables.
+-----------------------------------------------------------------------------
