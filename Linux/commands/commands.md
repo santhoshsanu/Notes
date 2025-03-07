@@ -76,9 +76,9 @@ each serving a specific purpose.
 In linux ,mounting known as mapping of hard disk from files 
   in linux  Virtual Machine is known as ,mounting.
 -----------------------------------------------------------------------------
-To know users present in the linux machine 
-  
   ` cat /etc/passwd `
+
+list linux users  
 -----------------------------------------------------------------------------
 to reeload the enviroment variables in in /etc/ directory
 
@@ -86,3 +86,23 @@ to reeload the enviroment variables in in /etc/ directory
 
   sorce is the command that reloads the enviromental variables.
 -----------------------------------------------------------------------------
+
+* `Daemon Programs:`
+
+* When a linux starts, kernel has to run some activites, so it initiates those activities as process and 
+   launches a program called as _init_
+
+---------------------------------
+
+* process:
+
+     * ps: Report the snapshot of current process
+     * top: Display task
+     * jobs: List active jobs
+     * bg: Place the job in the background
+     * fg: Place the job in the foreground
+     * kill: Send a signal to a process
+     * Killall: Kill a process by name
+     * shutdown: Shutdown or reboot a system
+
+-----------------------------------     
