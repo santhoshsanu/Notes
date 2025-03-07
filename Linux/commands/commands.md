@@ -87,7 +87,7 @@ to reeload the enviroment variables in in /etc/ directory
   sorce is the command that reloads the enviromental variables.
 -----------------------------------------------------------------------------
 
-* `Daemon Programs:`
+`Daemon Programs:`
 
 * When a linux starts, kernel has to run some activites, so it initiates those activities as process and 
    launches a program called as _init_
@@ -104,5 +104,20 @@ to reeload the enviroment variables in in /etc/ directory
      * kill: Send a signal to a process
      * Killall: Kill a process by name
      * shutdown: Shutdown or reboot a system
+
+
+* __fork()__ - Creating a New Process
+    * The __fork()__ system call creates a new process by duplicating the existing process (parent process).
+    * The new process, called the child process, gets a copy of the parent's memory, file descriptors,
+        and execution state.
+    * Both parent and child processes continue execution from the same point immediately after _fork()_.
+
+* __exec()__ -Replacing a Process Image
+    * The __exec()__ family of functions replaces the current process with a new program.
+
+*  __fork()__ and __exec()__ Together
+
+* __fork()__ creates a child process.
+* The child process calls __exec()__ to run a new program.
 
 -----------------------------------     
