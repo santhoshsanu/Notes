@@ -169,11 +169,19 @@ to reeload the enviroment variables in in /etc/ directory
 * `set` – Shows all shell variables and functions.
 * `export` – Makes a shell variable an environment variable.
 * `alias` – Lists or defines command shortcuts.
+ 
+* `printenv` command shows only environmental variables where 
+* `set` command displays both environment and shell variables
 
-* printenv command shows only environmental variables where set command displays both
-   environment and shell variables
+#### Some Interesting Variables
 
-
+* `PATH`: A colon-separated list of directories that are searched when you enter the name 
+            of an executable program
+* `USER`: Your username
+* `SHELL`: The name of your shell program
+* `HOME`: The path of your home directory
+* `LANG`: Defines the character set
+* `OLDPWD`: Previous working directory
 
 #### Data Stored in the Environment:
 
@@ -182,12 +190,17 @@ to reeload the enviroment variables in in /etc/ directory
 * Aliases: Custom command shortcuts.
 * Shell Functions: User-defined reusable functions.
 
---------------
+--------------------
+
+## Linux start up files
 
 * The exact sequence of files depends on type of shell you have started. There are two types
-    * Login shell session: This is the one in which we are prompted for username & password (ssh)
+    * Login shell session: This is the one in which we are prompted for `username` & `password (ssh)`
      ![login](../../images/linux/1.png)
 
     * A non-login shell: This generally occurs when we launch a terminal in GUI.
       ![non-login](../../images/linux/2.png)
-      
+
+-------------------------
+
+
