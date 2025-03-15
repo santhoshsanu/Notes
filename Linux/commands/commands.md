@@ -11,7 +11,7 @@
 * rmdir = removes directory
 * ls -al =  to show the permissions of the file
 *  ` rwx rwx rwx `
-fisrt coloumn is for group and second is for organization 
+fisrt coloumn is for `users` and second is for `groups` and third is for `others`.
 * `cd ..` is for one step backward
 * `cd ../..` is for two step backward
 * cp = it is used for to copy file
@@ -163,4 +163,30 @@ to reeload the enviroment variables in in /etc/ directory
 ---------------
 ## Env
 
-* ssmd
+#### Commands to View & Modify Environment:
+
+* `printenv` – Displays environment variables.
+* `set` – Shows all shell variables and functions.
+* `export` – Makes a shell variable an environment variable.
+* `alias` – Lists or defines command shortcuts.
+
+* printenv command shows only environmental variables where set command displays both
+   environment and shell variables
+
+
+
+#### Data Stored in the Environment:
+
+* Environment Variables: System-wide settings affecting processes.
+* Shell Variables: Local to the shell session.
+* Aliases: Custom command shortcuts.
+* Shell Functions: User-defined reusable functions.
+
+--------------
+
+* The exact sequence of files depends on type of shell you have started. There are two types
+    * Login shell session: This is the one in which we are prompted for username & password (ssh)
+    ![login shell ](image.png)
+
+    * A non-login shell: This generally occurs when we launch a terminal in GUI.
+    ![non-login shell](image-1.png)
