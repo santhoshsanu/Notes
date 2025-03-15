@@ -1,3 +1,5 @@
+# Commands
+
 * mkdir
 * pwd
 * cd
@@ -133,3 +135,32 @@ to reeload the enviroment variables in in /etc/ directory
    * When ping exits, the shell resumes control.
 
 -----------------------------------     
+
+## Signals
+
+* Kill command syntax
+  * `kill -signal PID`
+  * IF no signal is specified then the `TERM (terminate)` signal is sent by default `15`
+
+
+### Lets look at Common Signals
+
+* HUP: Hang up. The signal number is `1`
+
+* INT: Interrupt. This performs same functionas CTRL-C sent from terminal. It usally terminates the program . The signal number is `2`
+
+* KILL: Kill. This signal is special because this signal will not reach process, kernel will terminate program immedietly, so no clean up oppurtunity given to your program. Signal number is `9`
+
+* TERM: Terminate. This is default signal sent by kill. Signal number is `15`
+
+* CONT: Continue. This will restore the process after STOP or TSTP signal. This signal is sent 
+     by bg and fg commands. Signal number is `18`
+
+* STOP: Stop. This signal causes a process to pause without terminating. Signal number is `19`
+
+* TSTP: Terminal Stop. Signal number is `20`
+
+---------------
+## Env
+
+* ssmd
