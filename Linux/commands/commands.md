@@ -186,7 +186,8 @@ to reeload the enviroment variables in in /etc/ directory
 
 * The exact sequence of files depends on type of shell you have started. There are two types
     * Login shell session: This is the one in which we are prompted for username & password (ssh)
-    ![login shell ](image.png)
+     ![login](../../images/linux/1.png)
 
     * A non-login shell: This generally occurs when we launch a terminal in GUI.
-    ![non-login shell](image-1.png)
+      ![non-login](../../images/linux/2.png)
+      
