@@ -1,3 +1,5 @@
+# Commands
+
 * mkdir
 * pwd
 * cd
@@ -9,7 +11,7 @@
 * rmdir = removes directory
 * ls -al =  to show the permissions of the file
 *  ` rwx rwx rwx `
-fisrt coloumn is for group and second is for organization 
+fisrt coloumn is for `users` and second is for `groups` and third is for `others`.
 * `cd ..` is for one step backward
 * `cd ../..` is for two step backward
 * cp = it is used for to copy file
@@ -133,4 +135,72 @@ to reeload the enviroment variables in in /etc/ directory
    * When ping exits, the shell resumes control.
 
 -----------------------------------     
-### commands
+
+## Signals
+
+* Kill command syntax
+  * `kill -signal PID`
+  * IF no signal is specified then the `TERM (terminate)` signal is sent by default `15`
+
+
+### Lets look at Common Signals
+
+* HUP: Hang up. The signal number is `1`
+
+* INT: Interrupt. This performs same functionas CTRL-C sent from terminal. It usally terminates the program . The signal number is `2`
+
+* KILL: Kill. This signal is special because this signal will not reach process, kernel will terminate program immedietly, so no clean up oppurtunity given to your program. Signal number is `9`
+
+* TERM: Terminate. This is default signal sent by kill. Signal number is `15`
+
+* CONT: Continue. This will restore the process after STOP or TSTP signal. This signal is sent 
+     by bg and fg commands. Signal number is `18`
+
+* STOP: Stop. This signal causes a process to pause without terminating. Signal number is `19`
+
+* TSTP: Terminal Stop. Signal number is `20`
+
+---------------
+## Env
+
+#### Commands to View & Modify Environment:
+
+* `printenv` – Displays environment variables.
+* `set` – Shows all shell variables and functions.
+* `export` – Makes a shell variable an environment variable.
+* `alias` – Lists or defines command shortcuts.
+ 
+* `printenv` command shows only environmental variables where 
+* `set` command displays both environment and shell variables
+
+#### Some Interesting Variables
+
+* `PATH`: A colon-separated list of directories that are searched when you enter the name 
+            of an executable program
+* `USER`: Your username
+* `SHELL`: The name of your shell program
+* `HOME`: The path of your home directory
+* `LANG`: Defines the character set
+* `OLDPWD`: Previous working directory
+
+#### Data Stored in the Environment:
+
+* Environment Variables: System-wide settings affecting processes.
+* Shell Variables: Local to the shell session.
+* Aliases: Custom command shortcuts.
+* Shell Functions: User-defined reusable functions.
+
+--------------------
+
+## Linux start up files
+
+* The exact sequence of files depends on type of shell you have started. There are two types
+    * Login shell session: This is the one in which we are prompted for `username` & `password (ssh)`
+     ![login](../../images/linux/1.png)
+
+    * A non-login shell: This generally occurs when we launch a terminal in GUI.
+      ![non-login](../../images/linux/2.png)
+
+-------------------------
+
+
