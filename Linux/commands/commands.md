@@ -133,3 +133,4 @@ to reeload the enviroment variables in in /etc/ directory
    * When ping exits, the shell resumes control.
 
 -----------------------------------     
+### commands
