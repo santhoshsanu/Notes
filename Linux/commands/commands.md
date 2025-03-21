@@ -203,4 +203,8 @@ to reeload the enviroment variables in in /etc/ directory
 
 -------------------------
 
+## Systemd
+
+ - `Systemd` is a system that is designed specifically for the Linux kernel. It replaces the `sysvinit` process to 
+    become the first process with `PID = 1`, which gets executed in user space during the Linux start-up process.  
 
