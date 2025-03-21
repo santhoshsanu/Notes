@@ -246,4 +246,20 @@ sudo journalctl -u httpd
 ```
 - `-u --unit=UNIT`: Show logs from the specified unit.
 
+---
+
+## BOOT LOADERS
+
+- Boot loader is the first software program that runs when your computer starts.
+- Boot Loader is responsible for handing over the control of the system to Operating system.
+
+---
+
+## How Linux System Starts
+- GRUB loader located in Master Boot record is started
+- GRUB loader will find kernel files and load into RAM
+- Then systemd or SYSVinit (Whatever is configured by distro) will be started which will be PID1
+
+--
+
 
