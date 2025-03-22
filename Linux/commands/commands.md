@@ -261,7 +261,3 @@ sudo journalctl -u httpd
 - Then systemd or SYSVinit (Whatever is configured by distro) will be started which will be PID1
 
 --
-
-
-
-------------------------
