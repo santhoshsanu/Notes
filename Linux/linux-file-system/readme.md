@@ -3,8 +3,10 @@
 
 - `Inode` is a data structure and it defines file or a directory on the filesystem
 - `Inodes` point to blocks that makeup a file
-
+- Linux File system [Refer here](https://www.geeksforgeeks.org/linux-file-system/)
 Linux supports multiple filesystems, each designed for different use cases. Below are some of the most popular filesystems used in Linux environments.
+
+![Preview](../../images/linux/4.png)
 
 ##  EXT4 (Fourth Extended Filesystem)
 - The default filesystem for most Linux distributions.
@@ -26,13 +28,13 @@ Linux supports multiple filesystems, each designed for different use cases. Belo
   - **Built-in RAID support**, including **mirroring and striping**.
   - **Snapshots and cloning support** for efficient backups and data versioning.
 
-
 ---
 # Commands useful for storage  
 
 ## Disk Utilization:
 - The du command allows you to determine disk utilization on a directory-by-directory basis
 - For _du_ example [Refer here](https://www.redhat.com/en/blog/du-command-options)
+- **-s, --summarize** display only a total for each argument
 ```sh
 du -sh .
 ```
@@ -45,6 +47,13 @@ sudo df -l
 ```
 
 ## To show the free space in human-readable format
-```sh
+```bash
 sudo df -h
-```
+``` 
+
+### If you specify a particular file, it will display the mount information for that specific file.  
+
+For example:  
+```bash
+df <file name>
+
